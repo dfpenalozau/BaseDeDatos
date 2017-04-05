@@ -1,0 +1,56 @@
+
+<html>
+    <head>
+        
+        <title></title>
+    </head>
+    <body>
+        <script>
+        function verificar(){
+            contras=document.getElementById("contra");
+            texto=contras.value;
+            
+            if(texto.length<7){
+                alert("Clave no valida!!");
+                return false;
+            }
+            return true;
+        }
+        
+        
+        </script>
+    <style>
+	
+        .division{
+        text-align:center
+        }
+        .cuadro{
+            
+            background-color: #00DDFF;
+		border-width: 2px;
+                
+            
+        }
+	
+        
+            
+      
+    </style>
+    <form action="index.php" onsubmit="return verificar()">
+	
+	<div class="division">
+            <label >User:</label><br><input type="text" id="name" name="name" class="cuadro"><br>
+        </div><br>
+	<div class="division">
+            <label >Password: </label><br><input type="password" id="pass1" name="pass1" class="cuadro" ><br>
+	</div>
+	
+        <div class="division"><br>
+	<input type="submit" value="OK">
+	</div>
+
+
+</form>    
+        
+    </body>
+</html>
